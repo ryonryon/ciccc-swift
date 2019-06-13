@@ -12,8 +12,7 @@ func printIfUIResponder<Type: UIResponder>(_ argument: Type) {
 import UIKit
 
 printIfUIResponder(UIView())
-//printIfUIResponder(UIFont())
+// printIfUIResponder(UIFont())
 printIfUIResponder(UILabel())
-
 
 //: [Next](@next)

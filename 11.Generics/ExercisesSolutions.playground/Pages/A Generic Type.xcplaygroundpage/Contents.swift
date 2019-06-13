@@ -11,19 +11,21 @@ class IntAnalyzer<T: BinaryInteger> {
     }
 }
 
-protocol BinaryInteger{}
 //: - Callout(Exercise):
 //: Extend `IntAnalyzer` so that it includes a function called `analyze` which prints the value property, its bit width (`value.bitWidth`), and its sign (`value.signum()`).
 //:
 extension IntAnalyzer {
-    func analyze(){
+    func analyze() {
         print(value)
         print(value.bitWidth)
         print(value.signum())
     }
 }
+
 //: - Callout(Exercise):
 //: Create an instance of `IntAnalyzer`, then call the `analyze` function.
 //:
-//Todo
+let analyzer = IntAnalyzer(value: 5)
+analyzer.analyze()
+
 //: [Next](@next)
