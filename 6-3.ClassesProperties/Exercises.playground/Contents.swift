@@ -30,25 +30,31 @@ class Peach {
         self.variety = variety
         self.softness = softness
     }
+    
+    func ripen() -> String {
+        if softness < 5 {
+            softness += 1
+        }
+        
+        return softness == 5 ? "Ripen!" : "Not yet!"
+    }
 }
-//: __2a.__
-//: Add a type property to the Peach class called "varieties". It should hold an array of different types of peaches.
-//:
-//: __2b.__
-//: Add an instance method called ripen() that increases the value of the stored property, softness, and returns a string indicating whether the peach is ripe.
-//:
-//: __2c.__
-//: Create an instance of the Peach class and call the method ripen().
-
+let peach = Peach(variety: "Pink", softness: 5)
+peach.ripen()
 //: __Problem 3__
 //:
 //: __3a.__
 //:Add the computed property, "cuddlability", to the class, FluffyDog. Cuddlability should be computed based on the values of the stored properties, fluffiness and droolFactor.
 var theFluffiestDog = UIImage(named:"fluffyDog")!
 class FluffyDog {
+    // stored properties
     let name: String
     let fluffiness: Int
     let droolFactor: Int
+    // computed properties
+    var cuddlability: Int {
+        return fluffiness / droolFactor
+    }
     
     init(name: String, fluffiness: Int, droolFactor: Int) {
         self.name = name
@@ -62,7 +68,8 @@ class FluffyDog {
 }
 //: __3b.__
 //: Instantiate and initialize an instance of the class, FluffyDog. Use it to call the method, chase().
-
+let fluffyDog = FluffyDog(name: "Don", fluffiness: 10, droolFactor: 5)
+fluffyDog.chase("Chevy")
 //: __Problem 4__
 //:
 //: __4a.__
@@ -83,10 +90,33 @@ class ChattyDog {
         self.breed = breed
         self.size = size
     }
+    
+    func bark() -> String{
+        switch size {
+        case .small:
+            return "bark"
+        case .medium:
+            return "bark bark"
+        case .large:
+            return "bark bark bark"
+        }
+    }
+    
+    static func speak(_ size: Size) -> String{
+        switch size {
+        case .small:
+            return "bark"
+        case .medium:
+            return "bark bark"
+        case .large:
+            return "bark bark bark"
+        }
+    }
 }
 //: __4b.__
 //: Create an instance of ChattyDog and use it to call the method, bark().
-
+let dog = ChattyDog(name: "Don", breed: "Husky", size: .large)
+dog.bark()
 //: __4c.__
 //: Rewrite the method, bark(), as a type method and rename it speak(). Call your type method to test it out.
 
