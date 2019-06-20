@@ -35,6 +35,7 @@ func getOperatorIndex(_ str: String) -> Int {
 }
 
 func evaluate(_ str: String) -> Int {
+    
     let noBlankStr = str.replacingOccurrences(of: " ", with: "")
     
     if noBlankStr.prefix(1) != "(" {

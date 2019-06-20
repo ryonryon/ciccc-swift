@@ -27,6 +27,8 @@ import Foundation
 // (((1 + 2) + (3 * 1)) + 5)
 
 //printBinary(digits: 4)
-printDecimal(decimal: 3)
-
+//printDecimal(decimal: 3)
 //ExhaustiveSearch(url: "/Users/togashiryo/")
+
+crawlDirctory(url: "/Users/togashiryo/Agnosticful/")
+

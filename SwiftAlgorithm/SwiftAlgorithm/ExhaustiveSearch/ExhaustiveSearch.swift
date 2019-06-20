@@ -37,4 +37,15 @@ func printDecimal(decimal: Int, prefix: String = "") {
     }
 }
 
-
+func permutaion(_ word: String, soFar: String = "") {
+    
+    if word.count == 0 {
+        print(soFar)
+    } else {
+        
+        for i in 0..<word.count {
+            let ch = word[i]
+            permutaion(word[0, i] + word[(i + 1), word.count], soFar: soFar + ch)
+        }
+    }
+}
