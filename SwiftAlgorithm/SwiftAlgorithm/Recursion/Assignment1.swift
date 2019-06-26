@@ -12,7 +12,7 @@ import Foundation
 func getOperatorIndex(_ str: String) -> Int {
     var operataionIndex: Int = 0
 
-    var stack = Stack<String>()
+    var stack = MyStack<String>()
 
     for i in 0..<str.count {
         if str[str.index(str.startIndex, offsetBy: i)] == "(" {
@@ -70,15 +70,19 @@ func evaluate(_ str: String) -> Int {
     }
 }
 
-struct Stack<T> {
-    var array: [T] = []
+struct MyStack<Element> {
+    var array: [Element] = []
+    var isEmpty: Bool {
+        return array.isEmpty
+    }
 
-    mutating func push(_ element: T) {
+    mutating func push(_ element: Element) {
         array.append(element)
     }
 
-    mutating func pop() -> T? {
-        if !array.isEmpty {
+    @discardableResult
+    mutating func pop() -> Element? {
+        if !isEmpty {
             let index = array.count - 1
             let poppedValue = array.remove(at: index)
             return poppedValue
