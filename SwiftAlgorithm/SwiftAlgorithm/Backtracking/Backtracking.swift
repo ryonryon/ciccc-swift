@@ -11,7 +11,7 @@ import Foundation
 
 func rollDice(_ num: Int, _ list: [Int] = []) {
     if num == 0 {
-        print(list)
+        print("\(list)")
     } else {
         var _list = list
         
@@ -21,4 +21,33 @@ func rollDice(_ num: Int, _ list: [Int] = []) {
             _list.removeLast()
         }
     }
+}
+
+
+func rollDiceSumHelper(_ num: Int, _ targetSum: Int, _ soFar: Int, _ choices: inout [Int]) {
+    if num == 0 {
+        if soFar == targetSum {
+            print("\(choices)")
+        }
+        
+        return
+    }
+    
+    for i in 1...6 {
+        
+        if soFar + i + 1 * (num - 1) <= targetSum
+            && soFar + i + 6 * (num - 1) >= targetSum {
+            
+            choices.append(i)
+            
+            rollDiceSumHelper(num - 1, targetSum, soFar + i, &choices)
+            
+            choices.removeLast()
+        }
+    }
+}
+
+func rollDiceSum(_ num: Int, _ targetSum: Int) {
+    var choices = [Int]()
+    rollDiceSumHelper(num, targetSum, 0, &choices)
 }
