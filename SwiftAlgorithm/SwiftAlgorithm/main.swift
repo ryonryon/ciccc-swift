@@ -44,8 +44,26 @@ import Foundation
 //myStack1.push(7)
 
 
-var queue = QueueArray<String>()
-queue.enqueue("Hello")
-print(queue.peek!)
-queue.dequeue()
-print(queue.isEmpty)
+//var queue = QueueArray<String>()
+//queue.enqueue("Hello")
+//print(queue.peek!)
+//queue.dequeue()
+//print(queue.isEmpty)
+
+//rollDiceSum(2, 7)
+//
+//var coll = [1, 5, 76, 3, 356, 386, 3573, 7 , 73, 75373]
+//
+//insertionSort(collection: &coll, ascending: false)
+//
+//print(coll)
+
+//var sortedColl = mergeSort(collection: coll, ascending: false)
+//
+//print(sortedColl)
+//print(coll)
+//quickSort(collection: &coll)
+//
+//print(coll)
+
+print(RemoveOutermostParentheses().removeOuterParentheses("(()())(())"))

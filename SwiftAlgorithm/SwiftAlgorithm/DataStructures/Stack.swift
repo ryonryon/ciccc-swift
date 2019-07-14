@@ -32,6 +32,10 @@ struct Stack<Element: Equatable>: Equatable {
     mutating func pop() -> Element? {
         return storage.popLast()
     }
+    
+    func count() -> Int {
+        return self.storage.count
+    }
 }
 
 extension Stack: CustomStringConvertible {
