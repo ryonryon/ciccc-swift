@@ -33,6 +33,13 @@
 		B6ED9E0D22B9607300776906 /* miniProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED9E0C22B9607300776906 /* miniProject.swift */; };
 		B6ED9E1022BA94B600776906 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED9E0F22BA94B600776906 /* Search.swift */; };
 		B6ED9E1422BA99E300776906 /* LeetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED9E1322BA99E300776906 /* LeetCode.swift */; };
+		D9455ACD22DE8C7000734004 /* CyclicPermutaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455ACC22DE8C7000734004 /* CyclicPermutaion.swift */; };
+		D9455ACF22DFA63300734004 /* RepeatingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455ACE22DFA63300734004 /* RepeatingSequence.swift */; };
+		D9455AD222E0D92200734004 /* TreeRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455AD122E0D92200734004 /* TreeRepresentation.swift */; };
+		D9455AD422E0DCDD00734004 /* TreeRepresentationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455AD322E0DCDD00734004 /* TreeRepresentationTest.swift */; };
+		D9455AD622E190DD00734004 /* RepeatingSequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455AD522E190DC00734004 /* RepeatingSequenceTest.swift */; };
+		D9ED64E022DCEA0C00DBB809 /* FindTheTownJudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED64DF22DCEA0C00DBB809 /* FindTheTownJudge.swift */; };
+		D9ED64E222DD03F900DBB809 /* ConnectedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED64E122DD03F900DBB809 /* ConnectedComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +83,13 @@
 		B6ED9E0C22B9607300776906 /* miniProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniProject.swift; sourceTree = "<group>"; };
 		B6ED9E0F22BA94B600776906 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		B6ED9E1322BA99E300776906 /* LeetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode.swift; sourceTree = "<group>"; };
+		D9455ACC22DE8C7000734004 /* CyclicPermutaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicPermutaion.swift; sourceTree = "<group>"; };
+		D9455ACE22DFA63300734004 /* RepeatingSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingSequence.swift; sourceTree = "<group>"; };
+		D9455AD122E0D92200734004 /* TreeRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeRepresentation.swift; sourceTree = "<group>"; };
+		D9455AD322E0DCDD00734004 /* TreeRepresentationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeRepresentationTest.swift; sourceTree = "<group>"; };
+		D9455AD522E190DC00734004 /* RepeatingSequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingSequenceTest.swift; sourceTree = "<group>"; };
+		D9ED64DF22DCEA0C00DBB809 /* FindTheTownJudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheTownJudge.swift; sourceTree = "<group>"; };
+		D9ED64E122DD03F900DBB809 /* ConnectedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectedComponents.swift; path = SwiftAlgorithm/Graph/ConnectedComponents.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +142,13 @@
 		B663636622C548AF0024C7E7 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				D9ED64E122DD03F900DBB809 /* ConnectedComponents.swift */,
+				D9455ACE22DFA63300734004 /* RepeatingSequence.swift */,
+				D9455AD522E190DC00734004 /* RepeatingSequenceTest.swift */,
 				B663636722C548E10024C7E7 /* GraphRepresentation.swift */,
 				B6DDD33D22D91097006AD221 /* dfs.swift */,
 				B6DDD33F22D910A2006AD221 /* bfs.swift */,
+				D9455ACC22DE8C7000734004 /* CyclicPermutaion.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -154,6 +172,7 @@
 		B6ED9DF922B8040000776906 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				D9455AD022E0D41900734004 /* Tree */,
 				B663636622C548AF0024C7E7 /* Graph */,
 				B663636522C53EC60024C7E7 /* utils */,
 				B663635722C3EA370024C7E7 /* Backtracking */,
@@ -207,8 +226,18 @@
 				B663635C22C5254E0024C7E7 /* LetterCasePaermutation.swift */,
 				B663635E22C52EB70024C7E7 /* ReverseLinkedList.swift */,
 				B6DDD33922D7A3CE006AD221 /* RemoveOutermostParentheses.swift */,
+				D9ED64DF22DCEA0C00DBB809 /* FindTheTownJudge.swift */,
 			);
 			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		D9455AD022E0D41900734004 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				D9455AD122E0D92200734004 /* TreeRepresentation.swift */,
+				D9455AD322E0DCDD00734004 /* TreeRepresentationTest.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,16 +297,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9455AD622E190DD00734004 /* RepeatingSequenceTest.swift in Sources */,
 				B67352FD22C299A40007B8BA /* DesignLinkedList.swift in Sources */,
+				D9ED64E222DD03F900DBB809 /* ConnectedComponents.swift in Sources */,
 				B663635F22C52EB70024C7E7 /* ReverseLinkedList.swift in Sources */,
 				B6DDD33A22D7A3CE006AD221 /* RemoveOutermostParentheses.swift in Sources */,
 				B6ED9E0622B81A4C00776906 /* Assignment1.swift in Sources */,
 				B663636822C548E10024C7E7 /* GraphRepresentation.swift in Sources */,
+				D9455AD222E0D92200734004 /* TreeRepresentation.swift in Sources */,
 				B6ED9E0322B8044E00776906 /* Recursion.swift in Sources */,
 				B6CA379722D3B75F00E7A820 /* Sorting1.swift in Sources */,
 				B6DDD33E22D91097006AD221 /* dfs.swift in Sources */,
 				B67D70D922C12F2A000CE96A /* Queue.swift in Sources */,
+				D9455ACD22DE8C7000734004 /* CyclicPermutaion.swift in Sources */,
 				B6DDD34022D910A2006AD221 /* bfs.swift in Sources */,
+				D9455ACF22DFA63300734004 /* RepeatingSequence.swift in Sources */,
 				B663635D22C5254E0024C7E7 /* LetterCasePaermutation.swift in Sources */,
 				B6ED9E0A22B9445700776906 /* ExhaustiveSearch.swift in Sources */,
 				B6ED9DFB22B8040000776906 /* main.swift in Sources */,
@@ -290,7 +324,9 @@
 				B6ED9E0822B9423C00776906 /* String+DPStringTool.swift in Sources */,
 				B663636A22C6787C0024C7E7 /* FridayExcercise.swift in Sources */,
 				B663635922C3EB090024C7E7 /* Backtracking.swift in Sources */,
+				D9455AD422E0DCDD00734004 /* TreeRepresentationTest.swift in Sources */,
 				B6ED9E1422BA99E300776906 /* LeetCode.swift in Sources */,
+				D9ED64E022DCEA0C00DBB809 /* FindTheTownJudge.swift in Sources */,
 				B6ED9E1022BA94B600776906 /* Search.swift in Sources */,
 				B67352FB22C27FAB0007B8BA /* LinkedList.swift in Sources */,
 				B673C5E622C145E20000D7BD /* MinStack.swift in Sources */,

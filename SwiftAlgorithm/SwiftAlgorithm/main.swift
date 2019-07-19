@@ -66,4 +66,14 @@ import Foundation
 //
 //print(coll)
 
-print(RemoveOutermostParentheses().removeOuterParentheses("(()())(())"))
+//print(RemoveOutermostParentheses().removeOuterParentheses("(()())(())"))
+
+//print("test")
+
+//CyclicPermutaion(testCases:
+//    [
+//        TextCase.init(size: 8, permutations: [3, 2, 7, 8, 1, 4, 5, 6]),
+//        TextCase.init(size: 10, permutations: [2, 1, 3, 4, 5, 6, 7, 9, 10, 8]),
+//    ])
+//treeRepresentationTest()
+RepeatingSequenceTest()
