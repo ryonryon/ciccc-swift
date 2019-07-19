@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+func RepeatingSequenceTest() {
+    RepeatingSequence(A: 57, p: 2)
+//    print(next(20, 2))
+}
