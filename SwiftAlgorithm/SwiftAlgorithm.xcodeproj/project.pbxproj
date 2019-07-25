@@ -38,6 +38,11 @@
 		D9455AD222E0D92200734004 /* TreeRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455AD122E0D92200734004 /* TreeRepresentation.swift */; };
 		D9455AD422E0DCDD00734004 /* TreeRepresentationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455AD322E0DCDD00734004 /* TreeRepresentationTest.swift */; };
 		D9455AD622E190DD00734004 /* RepeatingSequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9455AD522E190DC00734004 /* RepeatingSequenceTest.swift */; };
+		D97741B922E6245A00713A4A /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97741B822E6245A00713A4A /* Heap.swift */; };
+		D97741BB22E638F200713A4A /* HeapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97741BA22E638F200713A4A /* HeapTest.swift */; };
+		D97741BD22E774E000713A4A /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97741BC22E774E000713A4A /* PriorityQueue.swift */; };
+		D97741BF22E8C8CA00713A4A /* WhosMyParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97741BE22E8C8CA00713A4A /* WhosMyParent.swift */; };
+		D97741C122E8CE1D00713A4A /* Diameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97741C022E8CE1D00713A4A /* Diameter.swift */; };
 		D9ED64E022DCEA0C00DBB809 /* FindTheTownJudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED64DF22DCEA0C00DBB809 /* FindTheTownJudge.swift */; };
 		D9ED64E222DD03F900DBB809 /* ConnectedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED64E122DD03F900DBB809 /* ConnectedComponents.swift */; };
 /* End PBXBuildFile section */
@@ -88,6 +93,11 @@
 		D9455AD122E0D92200734004 /* TreeRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeRepresentation.swift; sourceTree = "<group>"; };
 		D9455AD322E0DCDD00734004 /* TreeRepresentationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeRepresentationTest.swift; sourceTree = "<group>"; };
 		D9455AD522E190DC00734004 /* RepeatingSequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingSequenceTest.swift; sourceTree = "<group>"; };
+		D97741B822E6245A00713A4A /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		D97741BA22E638F200713A4A /* HeapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTest.swift; sourceTree = "<group>"; };
+		D97741BC22E774E000713A4A /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		D97741BE22E8C8CA00713A4A /* WhosMyParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhosMyParent.swift; sourceTree = "<group>"; };
+		D97741C022E8CE1D00713A4A /* Diameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diameter.swift; sourceTree = "<group>"; };
 		D9ED64DF22DCEA0C00DBB809 /* FindTheTownJudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheTownJudge.swift; sourceTree = "<group>"; };
 		D9ED64E122DD03F900DBB809 /* ConnectedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectedComponents.swift; path = SwiftAlgorithm/Graph/ConnectedComponents.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -109,6 +119,9 @@
 				B64BC75322BD569A0050D755 /* Stack.swift */,
 				B67D70D822C12F2A000CE96A /* Queue.swift */,
 				B67352FA22C27FAB0007B8BA /* LinkedList.swift */,
+				D97741B822E6245A00713A4A /* Heap.swift */,
+				D97741BA22E638F200713A4A /* HeapTest.swift */,
+				D97741BC22E774E000713A4A /* PriorityQueue.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -236,6 +249,8 @@
 			children = (
 				D9455AD122E0D92200734004 /* TreeRepresentation.swift */,
 				D9455AD322E0DCDD00734004 /* TreeRepresentationTest.swift */,
+				D97741BE22E8C8CA00713A4A /* WhosMyParent.swift */,
+				D97741C022E8CE1D00713A4A /* Diameter.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -303,6 +318,7 @@
 				B663635F22C52EB70024C7E7 /* ReverseLinkedList.swift in Sources */,
 				B6DDD33A22D7A3CE006AD221 /* RemoveOutermostParentheses.swift in Sources */,
 				B6ED9E0622B81A4C00776906 /* Assignment1.swift in Sources */,
+				D97741B922E6245A00713A4A /* Heap.swift in Sources */,
 				B663636822C548E10024C7E7 /* GraphRepresentation.swift in Sources */,
 				D9455AD222E0D92200734004 /* TreeRepresentation.swift in Sources */,
 				B6ED9E0322B8044E00776906 /* Recursion.swift in Sources */,
@@ -314,11 +330,15 @@
 				D9455ACF22DFA63300734004 /* RepeatingSequence.swift in Sources */,
 				B663635D22C5254E0024C7E7 /* LetterCasePaermutation.swift in Sources */,
 				B6ED9E0A22B9445700776906 /* ExhaustiveSearch.swift in Sources */,
+				D97741BB22E638F200713A4A /* HeapTest.swift in Sources */,
 				B6ED9DFB22B8040000776906 /* main.swift in Sources */,
 				B663636422C53E5D0024C7E7 /* Board.swift in Sources */,
 				B6ED9E0D22B9607300776906 /* miniProject.swift in Sources */,
+				D97741BD22E774E000713A4A /* PriorityQueue.swift in Sources */,
 				B64BC75422BD569A0050D755 /* Stack.swift in Sources */,
+				D97741C122E8CE1D00713A4A /* Diameter.swift in Sources */,
 				B6CA379B22D3B7D400E7A820 /* QuickSort.swift in Sources */,
+				D97741BF22E8C8CA00713A4A /* WhosMyParent.swift in Sources */,
 				B6CA379922D3B7B000E7A820 /* Sorting2.swift in Sources */,
 				B663636322C53E5D0024C7E7 /* QueensSolver.swift in Sources */,
 				B6ED9E0822B9423C00776906 /* String+DPStringTool.swift in Sources */,

@@ -77,3 +77,10 @@ extension BinaryNode: CustomStringConvertible {
             + diagram(for: node.leftChild, bottom + "│ ", bottom + "└──", bottom + " ")
     }
 }
+
+// final exam
+// 
+// pre-order [1, 2, 4, mil, 3, 5, nil]
+//
+// question 1 -> serialization
+// question 2 -> deserialization
