@@ -22,5 +22,7 @@ func treeRepresentationTest() {
     node1.leftChild = node3
     node2.leftChild = node4
     node2.rightChild = node5
+    
+    print(rootNode)
 
 }

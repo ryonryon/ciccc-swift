@@ -58,7 +58,7 @@ extension BinaryNode {
 
 extension BinaryNode: CustomStringConvertible {
     var description: String {
-        return ""
+        return diagram(for: self)
     }
     
     private func diagram(for node: BinaryNode?,

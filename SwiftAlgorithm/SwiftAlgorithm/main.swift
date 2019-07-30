@@ -77,4 +77,4 @@ import Foundation
 //    ])
 //treeRepresentationTest()
 //RepeatingSequenceTest()
-heapTest()
+treeRepresentationTest()
